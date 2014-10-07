@@ -1,0 +1,26 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style>
+
+    <!-- Text for listboxes, inverted for Andorid prior to 3.0 -->
+
+    <style name="MyListTextAppearanceSmall">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmallInverse</item>
+    </style>
+
+    <style name="MyListTextAppearanceDefault">
+        <item name="android:textAppearance">?android:attr/textAppearanceInverse</item>
+    </style>
+
+    <style name="MyListTextAppearanceMedium">
+        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
+    </style>
+
+</resources>

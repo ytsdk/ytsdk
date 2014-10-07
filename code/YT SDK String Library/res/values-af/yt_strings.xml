@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- YT SDK String and Errors -->
+	<string name="yt_activity_null">Fout: aktiwiteit kan nie NULL</string>
+	
+    <string name="yt_initialize_failed_title">Inisialisasie het misluk !</string>
+    <string name="yt_initialize_failed_msg">Jy moet bel Inisialiseer funk, voor af te laai n video</string>
+    
+    <string name="yt_server_auth_failed_title">Bediener verifikasie misluk !</string>
+    <string name="yt_server_auth_failed_msg">Skakel asseblief ytsdk.help@gmail.com die probleem op te los .</string>
+
+    <string name="yt_videoID_null_msg">Fout: VideoId is leeg.</string>
+    
+    <string name="yt_connection_error_title">Connection Error!</string>
+    <string name="yt_connection_error_msg">In staat stel om WiFi of 3G data konneksie en probeer weer .</string>
+    
+    <string name="yt_download_failed_title">Kon nie aflaai nie !</string>
+    <string name="yt_download_failed_msg">Video kan nie afgelaai word as gevolg van kopiereg of ouderdomsperk .</string>
+    <string name="yt_low_memory_msg">Fout: Onvoldoende geheue.</string>
+    <string name="yt_conn_failed_msg">Fout: Internet Connection misluk .</string>
+	
+	<string name="yt_download_error_title">Fout tydens laai !</string> 
+	<string name="yt_download_error_msg">rede:</string> 
+	
+	<string name="yt_download_dialog_title">formate</string> 
+	<string name="yt_progress_msg">Haal Video Info .. wag asseblief ..</string> 
+	<string name="yt_progress_msgmp3">Fetching mp3 Info.. please wait..</string> 
+	<string name="yt_download_completed">aflaai voltooi</string> 
+	<string name="yt_download_paused">Aflaai Broken !</string> 
+	<string name="yt_download_pending">Aflaai Status afwagting !</string> 
+	<string name="yt_download_running">Aflaai Status Running !</string> 
+	
+	<string name="yt_button_cancel">kanselleer</string> 
+	<string name="yt_button_install">installeer</string> 
+	
+	<string name="yt_watch_preview">Watch Voorskou</string> 
+	
+	
+	
+	<!-- Player Screen Error Messages -->
+	<string name="yt_video_conn_msg">Wag asseblief .. konnekteer aan video kan n rukkie neem ..</string> 
+	<string name="yt_msg_hd_wait">Pls wag eerste buffer van HD video sal n tyd ..</string> 
+	<string name="yt_msg_low_band">Buffering lae- bandwydte Video ..</string> 
+	<string name="yt_msg_hd_band">Versoek vir HD Video ..</string> 
+	
+	<string name="yt_msg_conn_err">Kommunikasie Fout .. Pls check netwerk ..</string> 
+	<string name="yt_msg_reconnecting">pls wag , re- verbinding te verbreek ..</string> 
+	<string name="yt_msg_error">Video kan nie gelaai word as gevolg van kopiereg of ouderdom beperking of netwerk kwessie .. Probeer asseblief later weer ..</string> 
+	<string name="yt_msg_link_err">Video skakel is gebreek of kon nie aan bediener verbind nie ..</string> 
+	
+	<string name="yt_startapp_activity_err">Inisialisering misluk Voeg die startapp mendatory aktiwiteite vir AppWallActivity en List3DActivity </string>
+    <string name="yt_revmob_activity_err">Inisialisering misluk Voeg die REVMOB mendatory saamhede vir FullscreenActivity </string>
+    <string name="yt_mobilecore_activity_err">Inisialisering misluk Voeg die Mobilecore mendatory reviever, diens vir MobileCoreReport en InstallationTracker</string>
+    
+    <string name="yt_initilization_activity_err">Inisialisering Failed.Please check jou opset.</string>
+    <string name="yt_revmob_jar_err">Inisialisering misluk voeg die revmob SDK Jar lêer </string>
+    <string name="yt_startapp_jar_err">Inisialisering misluk voeg die startapp SDK jar lêer</string>
+    <string name="yt_mobilecore_jar_err">Inisialisering misluk voeg die mobilecore SDK jar lêer</string>
+    
+    
+    <string name="yt_startapp_conflict_err"> Dit YTSDK Jar gebruik Startapp, gebruik asseblief n ander YTSDK Jar  </string>
+    <string name="yt_revmob_conflict_err"> Dit YTSDK Jar gebruik Revmob, gebruik asseblief n ander YTSDK Jar  </string>
+    <string name="yt_mobilecore_conflict_err"> Dit YTSDK Jar gebruik mobilecore, gebruik asseblief n ander YTSDK Jar </string>
+    
+	<!-- Video Format Strings to shown to Users -->
+	<string name="yt_format_5">Lae kwaliteit - 240p - FLV</string>
+	<string name="yt_format_6">Medium Kwaliteit - 270p - FLV</string>
+	<string name="yt_format_17">Lae kwaliteit - 144p - 3GP</string>
+	<string name="yt_format_18">Medium Kwaliteit - 270p/360p - MP4</string>
+	<string name="yt_format_22">Hoë Kwaliteit - 720p - MP4</string>
+	<string name="yt_format_34">Medium Kwaliteit - 360p - FLV</string>
+	<string name="yt_format_35">Medium Kwaliteit - 480p - FLV</string>
+	<string name="yt_format_36">Medium Kwaliteit - 240p - 3GP</string>
+	<string name="yt_format_37">Hoë Kwaliteit - 1080p - MP4</string>
+	<string name="yt_format_38">Hoë Kwaliteit Original - MP4</string>
+	<string name="yt_format_43">Medium Kwaliteit - 360p - WebM</string>
+	<string name="yt_format_44">Medium Kwaliteit - 480p - WebM</string>
+	<string name="yt_format_45">Hoë Kwaliteit - 720p - WebM</string>
+	<string name="yt_format_46">Hoë Kwaliteit - 1080p - WebM</string>
+	<string name="yt_format_59">Medium Kwaliteit - 480p - MP4</string>
+	<string name="yt_format_78">Medium Kwaliteit - 360p - MP4</string>
+	<string name="yt_format_82">Medium Kwaliteit(3D) - 360p - MP4</string>
+	<string name="yt_format_83">Lae kwaliteit (3D) - 240p - MP4</string>
+	<string name="yt_format_84">Hoë Kwaliteit(3D) - 720p - MP4</string>
+	<string name="yt_format_85">Medium Kwaliteit(3D) - 520p - MP4</string>
+	<string name="yt_format_100">Medium Kwaliteit(3D) - 360p - WebM</string>
+	<string name="yt_format_101">Medium Kwaliteit(3D) - 360p - WebM</string>
+	<string name="yt_format_102">Hoë Kwaliteit(3D) - 720p - WebM</string>
+	<string name="yt_format_133">Lae kwaliteit - 240p - VO MP4</string>
+	<string name="yt_format_134">Medium Kwaliteit - 360p - VO MP4</string>
+	<string name="yt_format_135">Medium Kwaliteit - 480p - VO MP4</string>
+	<string name="yt_format_136">Hoë Kwaliteit - 720p - VO MP4</string>
+	<string name="yt_format_137">Hoë Kwaliteit - 1080p - VO MP4</string>
+	<string name="yt_format_138">Hoë Kwaliteit Original - MP4</string>
+	<string name="yt_format_139">Lae kwaliteit  - AO M4A</string>
+	<string name="yt_format_140">Medium Kwaliteit - AO M4A</string>
+	<string name="yt_format_141">Hoë Kwaliteit - AO M4A</string>
+	<string name="yt_format_160">Low Quality - 144p - AO MP4</string>
+	<string name="yt_format_171">Medium Kwaliteit - AO OGG</string>
+	<string name="yt_format_172">Hoë Kwaliteit - AO OGG</string>
+	<string name="yt_format_242">Lae kwaliteit  - 240p - VO WebM</string>
+	<string name="yt_format_243">Lae kwaliteit  - 360p - VO WebM</string>
+	<string name="yt_format_244">Medium Kwaliteit - 480p - VO WebM</string>
+	<string name="yt_format_245">Medium Kwaliteit - 480p - VO WebM</string>
+	<string name="yt_format_246">Medium Kwaliteit - 480p - VO WebM</string>
+	<string name="yt_format_247">Hoë Kwaliteit - 720p - VO WebM</string>
+	<string name="yt_format_248">Hoë Kwaliteit - 1080p - VO WebM</string>
+	<string name="yt_format_264">Hoë Kwaliteit - 1080p(HBR) - VO MP4</string>
+	<string name="yt_format_500">Audio - MP3</string>
+	<string name="yt_format_unknown">onbekende</string>
+	
+	
+</resources>

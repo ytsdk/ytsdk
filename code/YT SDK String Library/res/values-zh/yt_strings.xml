@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- YT SDK String and Errors -->
+    <string name="yt_activity_null">错误：活动不能为NULL</string>
+    <string name="yt_initialize_failed_title">初始化失败！</string>
+    <string name="yt_initialize_failed_msg">你应该调用初始化函数，下载一个视频前</string>
+    <string name="yt_server_auth_failed_title">服务器身份验证失败！</string>
+    <string name="yt_server_auth_failed_msg">请联系ytsdk.help@gmail.com来解决问题。</string>
+    <string name="yt_videoID_null_msg">错误： VIDEOID为NULL 。</string>
+    <string name="yt_connection_error_title">连接错误！</string>
+    <string name="yt_connection_error_msg">启用WiFi或3G数据连接，然后重试。</string>
+    <string name="yt_download_failed_title">下载失败！</string>
+    <string name="yt_download_failed_msg">视频不能被版权保护，或年龄限制下载。</string>
+    <string name="yt_low_memory_msg">错误：内存不足。</string>
+    <string name="yt_conn_failed_msg">错误：网际网路连线失败。</string>
+    <string name="yt_download_error_title">下载错误！</string>
+    <string name="yt_download_error_msg">原因：</string>
+    <string name="yt_download_dialog_title">下载格式</string>
+    <string name="yt_progress_msg">获取视频信息..请稍候...</string>
+    <string name="yt_progress_msgmp3">获取mp3信息..请稍候...</string>
+    <string name="yt_download_completed">下载完成</string>
+    <string name="yt_download_paused">下载已暂停！</string>
+    <string name="yt_download_pending">下载状态待定！</string>
+    <string name="yt_download_running">下载状态运行！</string>
+    <string name="yt_button_cancel">取消</string>
+    <string name="yt_button_install">安装</string>
+    <string name="yt_watch_preview">观看预览</string>
+
+    <!-- Player Screen Error Messages -->
+    <string name="yt_video_conn_msg">请稍候...连接到视频可能需要一段时间..</string>
+    <string name="yt_msg_hd_wait">请等待，高清视频的初始缓冲需要一定的时间..</string>
+    <string name="yt_msg_low_band">缓冲的低带宽视频..</string>
+    <string name="yt_msg_hd_band">要求高清视频..</string>
+    <string name="yt_msg_conn_err">通讯错误..请您检查网络..</string>
+    <string name="yt_msg_reconnecting">请等待，再连接断绝..</string>
+    <string name="yt_msg_error">视频不能被版权保护，或年龄限制或网络问题，加载..请稍后再试..</string>
+    <string name="yt_msg_link_err">视频链路断开或无法连接到服务器..</string>
+    
+    <string name="yt_startapp_activity_err">初始化失败添加AppWallActivity的的startApp mendatory活动  和List3DActivity </string>
+    <string name="yt_revmob_activity_err">初始化失败添加REVMOB mendatory活动酒店的FullscreenActivity </string>
+    <string name="yt_mobilecore_activity_err">初始化失败添加Mobilecore mendatory reviever，服务  MobileCoreReport和InstallationTracker </string>
+    
+    <string name="yt_initilization_activity_err">初始化失败。请检查您的配置。</string>
+    <string name="yt_revmob_jar_err">初始化失败请加revmob SDK Jar文件</string>
+    <string name="yt_startapp_jar_err">初始化失败，请加的startApp SDK的jar文件 </string>
+    <string name="yt_mobilecore_jar_err">初始化失败请加mobilecore SDK的jar文件</string>
+    
+    
+    <string name="yt_startapp_conflict_err"> 使用的startApp这YTSDK罐，请使用不同的YTSDK罐 </string>
+    <string name="yt_revmob_conflict_err"> 使用Revmob这YTSDK罐，请使用不同的YTSDK罐  </string>
+    <string name="yt_mobilecore_conflict_err"> 使用mobilecore这YTSDK罐，请使用不同的YTSDK罐 </string>
+    
+    <!-- Video Format Strings to shown to Users -->
+    <string name="yt_format_5">低品质  - 240p - FLV</string>
+    <string name="yt_format_6">中等质量 - 270p - FLV</string>
+    <string name="yt_format_17">低品质  - 144p - 3GP</string>
+    <string name="yt_format_18">中等质量 - 270p/360p - MP4</string>
+    <string name="yt_format_22">高品质 - 720p - MP4</string>
+    <string name="yt_format_34">中等质量 - 360p - FLV</string>
+    <string name="yt_format_35">中等质量 - 480p - FLV</string>
+    <string name="yt_format_36">中等质量 - 240p - 3GP</string>
+    <string name="yt_format_37">高品质 - 1080p - MP4</string>
+    <string name="yt_format_38">高品质 - MP4</string>
+    <string name="yt_format_43">中等质量 - 360p - WebM</string>
+    <string name="yt_format_44">中等质量 - 480p - WebM</string>
+    <string name="yt_format_45">高品质 - 720p - WebM</string>
+    <string name="yt_format_46">高品质 - 1080p - WebM</string>
+    <string name="yt_format_59">中等质量 - 480p - MP4</string>
+    <string name="yt_format_78">中等质量 - 360p - MP4</string>
+    <string name="yt_format_82">中等质量(3D) - 360p - MP4</string>
+    <string name="yt_format_83">低品质 (3D) - 240p - MP4</string>
+    <string name="yt_format_84">高品质(3D) - 720p - MP4</string>
+    <string name="yt_format_85">中等质量(3D) - 520p - MP4</string>
+    <string name="yt_format_100">中等质量(3D) - 360p - WebM</string>
+    <string name="yt_format_101">中等质量(3D) - 360p - WebM</string>
+    <string name="yt_format_102">高品质(3D) - 720p - WebM</string>
+    <string name="yt_format_133">低品质 - 240p - VO MP4</string>
+    <string name="yt_format_134">中等质量 - 360p - VO MP4</string>
+    <string name="yt_format_135">中等质量 - 480p - VO MP4</string>
+    <string name="yt_format_136">高品质 - 720p - VO MP4</string>
+    <string name="yt_format_137">高品质 - 1080p - VO MP4</string>
+    <string name="yt_format_138">高品质 - MP4</string>
+    <string name="yt_format_139">低品质  - AO M4A</string>
+    <string name="yt_format_140">中等质量 - AO M4A</string>
+    <string name="yt_format_141">高品质 - AO M4A</string>
+    <string name="yt_format_160">低品质  - 144p - AO MP4</string>
+    <string name="yt_format_171">中等质量 - AO OGG</string>
+    <string name="yt_format_172">高品质 - AO OGG</string>
+    <string name="yt_format_242">低品质  - 240p - VO WebM</string>
+    <string name="yt_format_243">低品质  - 360p - VO WebM</string>
+    <string name="yt_format_244">中等质量 - 480p - VO WebM</string>
+    <string name="yt_format_245">中等质量 - 480p - VO WebM</string>
+    <string name="yt_format_246">中等质量 - 480p - VO WebM</string>
+    <string name="yt_format_247">高品质 - 720p - VO WebM</string>
+    <string name="yt_format_248">高品质 - 1080p - VO WebM</string>
+    <string name="yt_format_264">高品质 - 1080p(HBR) - VO MP4</string>
+    <string name="yt_format_500">音频 - MP3</string>
+    <string name="yt_format_unknown">未知</string>
+
+</resources>

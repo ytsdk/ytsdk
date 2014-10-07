@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- YT SDK String and Errors -->
+	<string name="yt_activity_null">エラー：活動にnullは指定できません。</string>
+	
+    <string name="yt_initialize_failed_title">初期化に失敗しました！</string>
+    <string name="yt_initialize_failed_msg">あなたは、ビデオをダウンロードする前に、初期化はFuncを呼び出す必要があります</string>
+    
+    <string name="yt_server_auth_failed_title">サーバー認証に失敗しました！</string>
+    <string name="yt_server_auth_failed_msg">問題を解決するために ytsdk.help@gmail.com までご連絡ください。</string>
+
+    <string name="yt_videoID_null_msg">エラー：動画IDがNULLである。</string>
+    
+    <string name="yt_connection_error_title">接続エラー！</string>
+    <string name="yt_connection_error_msg">WiFiまたは3Gデータ接続を有効にして、再試行してください。</string>
+    
+    <string name="yt_download_failed_title">ダウンロードに失敗しました！</string>
+    <string name="yt_download_failed_msg">ビデオは、著作権保護や年齢制限にダウンロードすることが傾ける。</string>
+    <string name="yt_low_memory_msg">エラー：メモリが不足しています。</string>
+    <string name="yt_conn_failed_msg">エラー：インターネット接続に失敗しました。</string>
+	
+	<string name="yt_download_error_title">エラーをダウンロードしてください！</string> 
+	<string name="yt_download_error_msg">理由： </string> 
+	
+	<string name="yt_download_dialog_title">ダウンロード形式</string> 
+	<string name="yt_progress_msg">動画情報を取り出す..お待ちください···</string> 
+	<string name="yt_progress_msgmp3">MP3の情報を取り出す..お待ちください···</string> 
+	<string name="yt_download_completed">ダウンロード完了</string> 
+	<string name="yt_download_paused">一時停止をダウンロードしてください！</string> 
+	<string name="yt_download_pending">Pending状態をダウンロードしてください！</string> 
+	<string name="yt_download_running">ステータスランニングをダウンロード！</string> 
+	
+	<string name="yt_button_cancel">キャンセル</string> 
+	<string name="yt_button_install">インストール</string> 
+	
+	<string name="yt_watch_preview">腕時計プレビュー</string> 
+	
+	
+	
+	<!-- Player Screen Error Messages -->
+	<string name="yt_video_conn_msg">ビデオへの接続に時間がかかることがあり...しばらくお待ちください...</string> 
+	<string name="yt_msg_hd_wait">PLS HDビデオの初期バッファリングに時間がかかりますが、待って..</string> 
+	<string name="yt_msg_low_band">低帯域幅のビデオをバッファリング..</string> 
+	<string name="yt_msg_hd_band">HDビデオを要求..</string> 
+	
+	<string name="yt_msg_conn_err">通信エラー.. Plsはネットワークをチェック..</string> 
+	<string name="yt_msg_reconnecting">PLS 、切断するために再接続するまで待機..</string> 
+	<string name="yt_msg_error">ビデオが著作権の保護や年齢制限やネットワークの問題にロードすることがカント..後で再試行してください..</string> 
+	<string name="yt_msg_link_err">ビデオリンクが壊れているか、サーバーに接続できませんでした···</string> 
+	
+	<string name="yt_startapp_activity_err">初期化はAppWallActivityためstartappのmendatory活動の追加に失敗しました  とList3DActivity </string>
+    <string name="yt_revmob_activity_err">初期化がFullscreenActivityのためREVMOBのmendatoryの支援を追加できませんでした</string>
+    <string name="yt_mobilecore_activity_err">初期化がために、Mobilecore mendatory revieverの追加サービスを失敗しました  MobileCoreReportとInstallationTracker </string>
+    
+    <string name="yt_initilization_activity_err">初期Failed.Pleaseは、あなたの設定を確認します。</string>
+    <string name="yt_revmob_jar_err">初期化に失敗しましたrevmob SDKのJARファイルを追加してください </string>
+    <string name="yt_startapp_jar_err">初期化に失敗しましたstartappのSDKのjarファイルを追加してください </string>
+    <string name="yt_mobilecore_jar_err">初期化に失敗しましたmobilecore SDKのjarファイルを追加してください</string>
+    
+    
+    <string name="yt_startapp_conflict_err"> startappのを使用しているこのYTSDKジャーは、異なるYTSDKジャーを使用してください </string>
+    <string name="yt_revmob_conflict_err"> Revmobを使用しているこのYTSDKジャーは、異なるYTSDKジャーを使用してください </string>
+    <string name="yt_mobilecore_conflict_err"> mobilecoreを使用しているこのYTSDKジャーは、異なるYTSDKジャーを使用してください </string>
+    
+	<!-- Video Format Strings to shown to Users -->
+	<string name="yt_format_5">低品質 - 240p - FLV</string>
+	<string name="yt_format_6">中音質 - 270p - FLV</string>
+	<string name="yt_format_17">低品質  - 144p - 3GP</string>
+	<string name="yt_format_18">中音質 - 270p/360p - MP4</string>
+	<string name="yt_format_22">高品質 - 720p - MP4</string>
+	<string name="yt_format_34">中音質 - 360p - FLV</string>
+	<string name="yt_format_35">中音質 - 480p - FLV</string>
+	<string name="yt_format_36">中音質 - 240p - 3GP</string>
+	<string name="yt_format_37">高品質- 1080p - MP4</string>
+	<string name="yt_format_38">高品質 - MP4</string>
+	<string name="yt_format_43">中音質 - 360p - WebM</string>
+	<string name="yt_format_44">中音質 - 480p - WebM</string>
+	<string name="yt_format_45">高品質 - 720p - WebM</string>
+	<string name="yt_format_46">高品質 - 1080p - WebM</string>
+	<string name="yt_format_59">中音質 - 480p - MP4</string>
+	<string name="yt_format_78">中音質 - 360p - MP4</string>
+	<string name="yt_format_82">中音質(3D) - 360p - MP4</string>
+	<string name="yt_format_83">低品質 (3D) - 240p - MP4</string>
+	<string name="yt_format_84">高品質(3D) - 720p - MP4</string>
+	<string name="yt_format_85">中音質(3D) - 520p - MP4</string>
+	<string name="yt_format_100">中音質(3D) - 360p - WebM</string>
+	<string name="yt_format_101">中音質(3D) - 360p - WebM</string>
+	<string name="yt_format_102">高品質(3D) - 720p - WebM</string>
+	<string name="yt_format_133">低品質 - 240p - VO MP4</string>
+	<string name="yt_format_134">中音質 - 360p - VO MP4</string>
+	<string name="yt_format_135">中音質 - 480p - VO MP4</string>
+	<string name="yt_format_136">高品質 - 720p - VO MP4</string>
+	<string name="yt_format_137">高品質 - 1080p - VO MP4</string>
+	<string name="yt_format_138">高品質 - MP4</string>
+	<string name="yt_format_139">低品質  - AO M4A</string>
+	<string name="yt_format_140">中音質 - AO M4A</string>
+	<string name="yt_format_141">高品質 - AO M4A</string>
+	<string name="yt_format_160">低品質  - 144p - AO MP4</string>
+	<string name="yt_format_171">中音質 - AO OGG</string>
+	<string name="yt_format_172">高品質 - AO OGG</string>
+	<string name="yt_format_242">低品質  - 240p - VO WebM</string>
+	<string name="yt_format_243">低品質  - 360p - VO WebM</string>
+	<string name="yt_format_244">中音質 - 480p - VO WebM</string>
+	<string name="yt_format_245">中音質 - 480p - VO WebM</string>
+	<string name="yt_format_246">中音質 - 480p - VO WebM</string>
+	<string name="yt_format_247">高品質 - 720p - VO WebM</string>
+	<string name="yt_format_248">高品質 - 1080p - VO WebM</string>
+	<string name="yt_format_264">高品質 - 1080p(HBR) - VO MP4</string>
+	<string name="yt_format_500">オーディオ - MP3</string>
+	<string name="yt_format_unknown">不明</string>
+	
+	
+</resources>

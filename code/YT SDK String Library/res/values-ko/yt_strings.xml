@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- YT SDK String and Errors -->
+	<string name="yt_activity_null">오류 : 활동 은 NULL이 될 수 없습니다</string>
+	
+    <string name="yt_initialize_failed_title">초기화 실패!</string>
+    <string name="yt_initialize_failed_msg">당신은 비디오를 다운로드하기 전에 , 초기화 Func을 호출해야합니다</string>
+    
+    <string name="yt_server_auth_failed_title">서버 인증 실패 !</string>
+    <string name="yt_server_auth_failed_msg">문제를 해결하기 위해 ytsdk.help@gmail.com 로 연락 주시기 바랍니다 .</string>
+
+    <string name="yt_videoID_null_msg">오류 : 동영상 ID 는 NULL 입니다 .</string>
+    
+    <string name="yt_connection_error_title">연결 오류 !</string>
+    <string name="yt_connection_error_msg">와이파이 또는 3G 데이터 연결을 사용하도록 설정하고 다시 시도하십시오.</string>
+    
+    <string name="yt_download_failed_title">다운로드 실패!</string>
+    <string name="yt_download_failed_msg">동영상 은 저작권 보호가 나이 제한 에 다운로드 캔트 .</string>
+    <string name="yt_low_memory_msg">오류 : 메모리가 부족합니다 </string>
+    <string name="yt_conn_failed_msg">오류 : 인터넷 연결 하지 못했습니다.</string>
+	
+	<string name="yt_download_error_title">오류 다운로드 !</string> 
+	<string name="yt_download_error_msg">이유 :</string> 
+	
+	<string name="yt_download_dialog_title">다운로드 형식</string> 
+	<string name="yt_progress_msg">비디오 로 정보를 가져 오는 .. 기다려주세요 ..</string> 
+	<string name="yt_progress_msgmp3">MP3로 정보를 가져 오는 .. 기다려주세요 ..</string> 
+	<string name="yt_download_completed">다운로드 완료</string> 
+	<string name="yt_download_paused">일시 중지 다운로드 !</string> 
+	<string name="yt_download_pending">보류 상태를 다운로드 !</string> 
+	<string name="yt_download_running">상태 달리기 !</string> 
+	
+	<string name="yt_button_cancel">취소</string> 
+	<string name="yt_button_install">설치</string> 
+	
+	<string name="yt_watch_preview">시계 미리보기</string> 
+	
+	
+	
+	<!-- Player Screen Error Messages -->
+	<string name="yt_video_conn_msg">비디오 에 연결 하는 것은 시간이 걸릴 수 있습니다 .. 기다려주십시오 ..</string> 
+	<string name="yt_msg_hd_wait">Pls는 HD 비디오 의 초기 버퍼링 시간이 좀 걸릴 것입니다 , 잠깐 ..</string> 
+	<string name="yt_msg_low_band">저 대역 폭 영상 을 버퍼링 ..</string> 
+	<string name="yt_msg_hd_band">HD 비디오 에 대한 요청 ..</string> 
+	
+	<string name="yt_msg_conn_err">통신 오류 .. Pls는 네트워크를 확인 ..</string> 
+	<string name="yt_msg_reconnecting">pls는 , 절단 에 다시 연결 대기 ..</string> 
+	<string name="yt_msg_error">동영상 은 저작권 보호가 나이 제한 또는 네트워크 문제 로로드 캔트 .. 나중에 다시 시도하십시오 ..</string> 
+	<string name="yt_msg_link_err">동영상 링크가 고장 또는 서버 에 연결할 수 없습니다 .. </string> 
+	
+	<string name="yt_startapp_activity_err">초기화 AppWallActivity에 대한 startapp mendatory 활동을 추가 실패  및 List3DActivity </string>
+    <string name="yt_revmob_activity_err">초기화 FullscreenActivity에 대한 REVMOB의 mendatory의 activitie을 추가 실패</string>
+    <string name="yt_mobilecore_activity_err">초기화를 들어, Mobilecore mendatory reviever 추가 서비스를 실패 MobileCoreReport 및 InstallationTracker</string>
+    
+    <string name="yt_initilization_activity_err">초기화하지 못했습니다. 구성을 확인하시기 바랍니다. </string>
+    <string name="yt_revmob_jar_err">초기화 실패 revmob SDK를 JAR 파일을 추가하십시오</string>
+    <string name="yt_startapp_jar_err">초기화 실패 startapp SDK를 jar 파일을 추가하세요</string>
+    <string name="yt_mobilecore_jar_err">초기화 실패 mobilecore SDK를 jar 파일을 추가하세요</string>
+    
+    
+    <string name="yt_startapp_conflict_err"> Startapp를 사용하는이 YTSDK 항아리는 다른 YTSDK 항아리를 사용하십시오 </string>
+    <string name="yt_revmob_conflict_err"> Revmob를 사용하는이 YTSDK 항아리는 다른 YTSDK 항아리를 사용하십시오 </string>
+    <string name="yt_mobilecore_conflict_err"> mobilecore를 사용하는이 YTSDK 항아리는 다른 YTSDK 항아리를 사용하십시오 </string>
+    
+	<!-- Video Format Strings to shown to Users -->
+	<string name="yt_format_5">낮은 품질 - 240p - FLV</string>
+	<string name="yt_format_6">중간 품질 - 270p - FLV</string>
+	<string name="yt_format_17">낮은 품질 - 144p - 3GP</string>
+	<string name="yt_format_18">중간 품질 - 270p/360p - MP4</string>
+	<string name="yt_format_22">고품질 - 720p - MP4</string>
+	<string name="yt_format_34">중간 품질 - 360p - FLV</string>
+	<string name="yt_format_35">중간 품질 - 480p - FLV</string>
+	<string name="yt_format_36">중간 품질 - 240p - 3GP</string>
+	<string name="yt_format_37">고품질 - 1080p - MP4</string>
+	<string name="yt_format_38">고품질 - MP4</string>
+	<string name="yt_format_43">중간 품질 - 360p - WebM</string>
+	<string name="yt_format_44">중간 품질 - 480p - WebM</string>
+	<string name="yt_format_45">고품질 - 720p - WebM</string>
+	<string name="yt_format_46">고품질 - 1080p - WebM</string>
+	<string name="yt_format_59">중간 품질 - 480p - MP4</string>
+	<string name="yt_format_78">중간 품질 - 360p - MP4</string>
+	<string name="yt_format_82">중간 품질(3D) - 360p - MP4</string>
+	<string name="yt_format_83">낮은 품질(3D) - 240p - MP4</string>
+	<string name="yt_format_84">고품질(3D) - 720p - MP4</string>
+	<string name="yt_format_85">중간 품질(3D) - 520p - MP4</string>
+	<string name="yt_format_100">중간 품질(3D) - 360p - WebM</string>
+	<string name="yt_format_101">중간 품질(3D) - 360p - WebM</string>
+	<string name="yt_format_102">고품질(3D) - 720p - WebM</string>
+	<string name="yt_format_133">낮은 품질- 240p - VO MP4</string>
+	<string name="yt_format_134">중간 품질 - 360p - VO MP4</string>
+	<string name="yt_format_135">중간 품질 - 480p - VO MP4</string>
+	<string name="yt_format_136">고품질 - 720p - VO MP4</string>
+	<string name="yt_format_137">고품질 - 1080p - VO MP4</string>
+	<string name="yt_format_138">고품질 - MP4</string>
+	<string name="yt_format_139">낮은 품질 - AO M4A</string>
+	<string name="yt_format_140">중간 품질 - AO M4A</string>
+	<string name="yt_format_141">고품질 - AO M4A</string>
+	<string name="yt_format_160">낮은 품질 - 144p - AO MP4</string>
+	<string name="yt_format_171">중간 품질 - AO OGG</string>
+	<string name="yt_format_172">고품질 - AO OGG</string>
+	<string name="yt_format_242">낮은 품질 - 240p - VO WebM</string>
+	<string name="yt_format_243">낮은 품질 - 360p - VO WebM</string>
+	<string name="yt_format_244">중간 품질 - 480p - VO WebM</string>
+	<string name="yt_format_245">중간 품질 - 480p - VO WebM</string>
+	<string name="yt_format_246">중간 품질 - 480p - VO WebM</string>
+	<string name="yt_format_247">고품질 - 720p - VO WebM</string>
+	<string name="yt_format_248">고품질 - 1080p - VO WebM</string>
+	<string name="yt_format_264">고품질 - 1080p(HBR) - VO MP4</string>
+	<string name="yt_format_500">오디오 - MP3</string>
+	<string name="yt_format_unknown">알 수없는</string>
+	
+	
+</resources>

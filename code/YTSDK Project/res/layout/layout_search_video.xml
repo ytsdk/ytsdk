@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/body_bg_color"
+    android:clickable="true"
+    android:padding="4dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/squre_search_border"
+        android:gravity="center"
+        android:padding="1dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.0dip"
+            android:layout_marginLeft="0.0dip"
+            android:layout_marginRight="0.0dip"
+            android:layout_marginTop="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="1.0dip" >
+
+            <EditText
+                android:id="@+id/edit_seach"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="0.0dip"
+                android:layout_marginRight="0.0dip"
+                android:background="#ffffffff"
+                android:hint="@string/hint_search_video"
+                android:imeOptions="actionSearch"
+                android:inputType="textAutoCorrect"
+                android:padding="5.0dip"
+                android:paddingBottom="0.0dip"
+                android:paddingLeft="0.0dip"
+                android:paddingRight="0.0dip"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#ff000000"
+                android:textSize="18.0dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+           android:id="@+id/searchButtonLayout"
+            android:layout_width="45.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="0.0dip"
+            android:layout_marginTop="0.0dip"
+            android:background="@color/search_button_color"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:background="@drawable/search_icon_white_40x40" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchLayout"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="1px"
+        android:numColumns="2"
+        android:visibility="gone" />
+
+</RelativeLayout>

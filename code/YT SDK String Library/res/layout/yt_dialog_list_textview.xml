@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minHeight="30dp"
+    android:text="Title"
+    android:textSize="18.0sp" 
+ 	android:textColor="@color/yt_list_text_color"
+ 	android:paddingTop="4dp"
+ 	android:paddingBottom="4dp" />
+
+

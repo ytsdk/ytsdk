@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- YT SDK String and Errors -->
+	<string name="yt_activity_null">Errore: attività non può essere NULL</string>
+	
+    <string name="yt_initialize_failed_title">Inizializzazione non riuscita !</string>
+    <string name="yt_initialize_failed_msg">Si dovrebbe chiamare Initialize Func , prima di scaricare un video</string>
+    
+    <string name="yt_server_auth_failed_title">Autenticazione server non riuscita!</string>
+    <string name="yt_server_auth_failed_msg">Si prega di contattare ytsdk.help@gmail.com per risolvere il problema .</string>
+
+    <string name="yt_videoID_null_msg">Errore: VideoID è NULL .</string>
+    
+    <string name="yt_connection_error_title">Errore di connessione !</string>
+    <string name="yt_connection_error_msg">Attiva wifi o connessione dati 3G e riprovare .</string>
+    
+    <string name="yt_download_failed_title">Download non riuscito !</string>
+    <string name="yt_download_failed_msg">Video cant essere scaricato a causa di protezione del copyright o limitazione di età .</string>
+    <string name="yt_low_memory_msg">Errore: Memoria insufficiente .</string>
+    <string name="yt_conn_failed_msg">Errore: Connessione Internet non riuscita .</string>
+	
+	<string name="yt_download_error_title">Scarica Errore!</string> 
+	<string name="yt_download_error_msg">motivo:</string> 
+	
+	<string name="yt_download_dialog_title">Scarica Formati</string> 
+	<string name="yt_progress_msg">Recupero video Info .. attendere prego ..</string> 
+	<string name="yt_progress_msgmp3">Recupero mp3 Info .. attendere prego ..</string> 
+	<string name="yt_download_completed">Scarica completato</string> 
+	<string name="yt_download_paused">Scarica pausa !</string> 
+	<string name="yt_download_pending">Scarica stato sospeso !</string> 
+	<string name="yt_download_running">Scarica podistica Stato !</string> 
+	
+	<string name="yt_button_cancel">cancellare</string> 
+	<string name="yt_button_install">installare</string> 
+	
+	<string name="yt_watch_preview">Guarda Anteprima</string> 
+	
+	
+	
+	<!-- Player Screen Error Messages -->
+	<string name="yt_video_conn_msg">Attendere prego .. Collegamento a video può richiedere un po ..</string> 
+	<string name="yt_msg_hd_wait">Pls aspettare , il buffering iniziale di video HD ci vorrà del tempo ..</string> 
+	<string name="yt_msg_low_band">Tamponamento larghezza di banda bassa Video ..</string> 
+	<string name="yt_msg_hd_band">Richiesta per il video HD ..</string> 
+	
+	<string name="yt_msg_conn_err">Errore di comunicazione .. Il controllo di Pls rete ..</string> 
+	<string name="yt_msg_reconnecting">pls aspetta , ri -connessione a tagliare ..</string> 
+	<string name="yt_msg_error">Video cant essere caricato a causa di protezione del copyright o limitazione di età o problema di rete .. Si prega di riprovare più tardi ..</string> 
+	<string name="yt_msg_link_err">Video link è rotto o non può connettersi al server .. </string> 
+	
+	<string name="yt_startapp_activity_err">Inizializzazione non riuscita Aggiungere le startApp attività mendatory per AppWallActivity e List3DActivity </string>
+    <string name="yt_revmob_activity_err">Inizializzazione non riuscita Aggiungi il activitie REVMOB mendatory per FullscreenActivity </string>
+    <string name="yt_mobilecore_activity_err">Inizializzazione non riuscita Aggiungere il reviever mendatory Mobilecore, servizio per MobileCoreReport e InstallationTracker</string>
+    
+    <string name="yt_initilization_activity_err">Inizializzazione Failed.Please controllare la configurazione.</string>
+    <string name="yt_revmob_jar_err">Inizializzazione non riuscita si prega di aggiungere il file Jar revmob sdk </string>
+    <string name="yt_startapp_jar_err">Inizializzazione non riuscita si prega di aggiungere il file jar startApp sdk</string>
+    <string name="yt_mobilecore_jar_err">Inizializzazione non riuscita si prega di aggiungere il file jar mobilecore sdk</string>
+    
+    
+    <string name="yt_startapp_conflict_err"> Questo Jar YTSDK sta utilizzando startApp, Si prega di utilizzare un diverso Jar YTSDK </string>
+    <string name="yt_revmob_conflict_err"> Questo Jar YTSDK sta utilizzando Revmob, Si prega di utilizzare un diverso Jar YTSDK </string>
+    <string name="yt_mobilecore_conflict_err"> Questo Jar YTSDK utilizza mobilecore, Si prega di utilizzare un diverso Jar YTSDK </string>
+    
+	<!-- Video Format Strings to shown to Users -->
+	<string name="yt_format_5">Low Quality - 240p - FLV</string>
+	<string name="yt_format_6">Qualità media - 270p - FLV</string>
+	<string name="yt_format_17">Low Quality - 144p - 3GP</string>
+	<string name="yt_format_18">Qualità media - 270p/360p - MP4</string>
+	<string name="yt_format_22">Alta qualità - 720p - MP4</string>
+	<string name="yt_format_34">Qualità media - 360p - FLV</string>
+	<string name="yt_format_35">Qualità media - 480p - FLV</string>
+	<string name="yt_format_36">Qualità media - 240p - 3GP</string>
+	<string name="yt_format_37">Alta qualità - 1080p - MP4</string>
+	<string name="yt_format_38">Alta qualità Original - MP4</string>
+	<string name="yt_format_43">Qualità media - 360p - WebM</string>
+	<string name="yt_format_44">Qualità media - 480p - WebM</string>
+	<string name="yt_format_45">Alta qualità- 720p - WebM</string>
+	<string name="yt_format_46">Alta qualità - 1080p - WebM</string>
+	<string name="yt_format_59">Qualità media - 480p - MP4</string>
+	<string name="yt_format_78">Qualità media - 360p - MP4</string>
+	<string name="yt_format_82">Qualità media(3D) - 360p - MP4</string>
+	<string name="yt_format_83">Low Quality(3D) - 240p - MP4</string>
+	<string name="yt_format_84">Alta qualità(3D) - 720p - MP4</string>
+	<string name="yt_format_85">Qualità media(3D) - 520p - MP4</string>
+	<string name="yt_format_100">Qualità media(3D) - 360p - WebM</string>
+	<string name="yt_format_101">Qualità media(3D) - 360p - WebM</string>
+	<string name="yt_format_102">Alta qualità(3D) - 720p - WebM</string>
+	<string name="yt_format_133">Low Quality- 240p - VO MP4</string>
+	<string name="yt_format_134">Qualità media - 360p - VO MP4</string>
+	<string name="yt_format_135">Qualità media - 480p - VO MP4</string>
+	<string name="yt_format_136">Alta qualità - 720p - VO MP4</string>
+	<string name="yt_format_137">Alta qualità - 1080p - VO MP4</string>
+	<string name="yt_format_138">Alta qualità Original - MP4</string>
+	<string name="yt_format_139">Low Quality - AO M4A</string>
+	<string name="yt_format_140">Qualità media - AO M4A</string>
+	<string name="yt_format_141">Alta qualità - AO M4A</string>
+	<string name="yt_format_160">Low Quality - 144p - AO MP4</string>
+	<string name="yt_format_171">Qualità media - AO OGG</string>
+	<string name="yt_format_172">Alta qualità - AO OGG</string>
+	<string name="yt_format_242">Low Quality - 240p - VO WebM</string>
+	<string name="yt_format_243">Low Quality - 360p - VO WebM</string>
+	<string name="yt_format_244">Qualità media - 480p - VO WebM</string>
+	<string name="yt_format_245">Qualità media - 480p - VO WebM</string>
+	<string name="yt_format_246">Qualità media - 480p - VO WebM</string>
+	<string name="yt_format_247">Alta qualità - 720p - VO WebM</string>
+	<string name="yt_format_248">Alta qualità - 1080p - VO WebM</string>
+	<string name="yt_format_264">Alta qualità - 1080p(HBR) - VO MP4</string>
+	<string name="yt_format_500">Audio - MP3</string>
+	<string name="yt_format_unknown">sconosciuto</string>
+	
+	
+</resources>

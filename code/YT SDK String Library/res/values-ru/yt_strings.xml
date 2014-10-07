@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- YT SDK String and Errors -->
+	<string name="yt_activity_null">Ошибка : Активность не может быть пустым</string>
+	
+    <string name="yt_initialize_failed_title">Сбой инициализации !</string>
+    <string name="yt_initialize_failed_msg">Вы должны позвонить Initialize Func , перед загрузкой видео</string>
+    
+    <string name="yt_server_auth_failed_title">Сервер аутентификации Не удалось !</string>
+    <string name="yt_server_auth_failed_msg">Пожалуйста, свяжитесь с ytsdk.help@gmail.com , чтобы решить эту проблему.</string>
+
+    <string name="yt_videoID_null_msg">Ошибка: VideoID является NULL .</string>
+    
+    <string name="yt_connection_error_title">Ошибка соединения !</string>
+    <string name="yt_connection_error_msg">Включить WiFi или соединение для передачи данных 3G и повторите попытку.</string>
+    
+    <string name="yt_download_failed_title">Скачать удалось !</string>
+    <string name="yt_download_failed_msg">Видео не может быть загружен из-за защиты авторских прав или ограничения возраста .</string>
+    <string name="yt_low_memory_msg">Ошибка: Недостаточно памяти .</string>
+    <string name="yt_conn_failed_msg">Ошибка: Не удалось подключения к Интернету.</string>
+	
+	<string name="yt_download_error_title">Скачать Ошибка!</string> 
+	<string name="yt_download_error_msg">Причина: </string> 
+	
+	<string name="yt_download_dialog_title">скачки</string> 
+	<string name="yt_progress_msg">Извлечение видео информация .. пожалуйста, подождите ..</string> 
+	<string name="yt_progress_msgmp3">Извлечение mp3 информация .. пожалуйста, подождите ..</string> 
+	<string name="yt_download_completed">Скачать завершена</string> 
+	<string name="yt_download_paused">Загрузка приостановлена ​​!</string> 
+	<string name="yt_download_pending">Скачать Статус ожидании !</string> 
+	<string name="yt_download_running">Скачать рабочего состояния !</string> 
+	
+	<string name="yt_button_cancel">отменить</string> 
+	<string name="yt_button_install">устанавливать</string> 
+	
+	<string name="yt_watch_preview">Смотреть Предварительный</string> 
+	
+	
+	
+	<!-- Player Screen Error Messages -->
+	<string name="yt_video_conn_msg">Пожалуйста, подождите .. Подключение к видео может занять некоторое время ..</string> 
+	<string name="yt_msg_hd_wait">Pls ждать , начальная буферизации видео высокой четкости займет некоторое время ..</string> 
+	<string name="yt_msg_low_band">Буферизация низким Ширина полосы видео ..</string> 
+	<string name="yt_msg_hd_band">Запрос для HD-видео ..</string> 
+	
+	<string name="yt_msg_conn_err">Ошибка связи .. Пожалуйста, проверьте сеть ..</string> 
+	<string name="yt_msg_reconnecting">Pls ждать , повторного соединения разорвать ..</string> 
+	<string name="yt_msg_error">Видео не может быть загружена из-за защиты авторских прав или ограничения возраста или сетевой вопросу .. Пожалуйста , повторите попытку позже ..</string> 
+	<string name="yt_msg_link_err">Ссылка на видео сломан или не может подключиться к серверу .. </string> 
+	
+	<string name="yt_startapp_activity_err">Сбой инициализации Добавьте StartApp mendatory мероприятия для AppWallActivity и List3DActivity </string>
+    <string name="yt_revmob_activity_err">Сбой инициализации Добавьте REVMOB mendatory явлениям для FullscreenActivity </string>
+    <string name="yt_mobilecore_activity_err">Сбой инициализации Добавьте mendatory reviever Mobilecore, сервис для  MobileCoreReport и InstallationTracker</string>
+    
+    <string name="yt_initilization_activity_err">Сбой инициализации. Проверьте конфигурацию.</string>
+    <string name="yt_revmob_jar_err">Сбой инициализации добавьте файл Jar revmob SDK </string>
+    <string name="yt_startapp_jar_err">Сбой инициализации добавьте файл банку StartApp SDK</string>
+    <string name="yt_mobilecore_jar_err">Сбой инициализации добавьте файл банку mobilecore SDK</string>
+    
+    
+    <string name="yt_startapp_conflict_err">Это YTSDK Jar использует StartApp, пожалуйста, используйте другой YTSDK Jar </string>
+    <string name="yt_revmob_conflict_err"> Это YTSDK Jar использует Revmob, пожалуйста, используйте другой YTSDK Jar </string>
+    <string name="yt_mobilecore_conflict_err"> Это YTSDK Jar использует mobilecore, пожалуйста, используйте другой YTSDK Jar </string>
+    
+    
+	<!-- Video Format Strings to shown to Users -->
+	<string name="yt_format_5">Низкое качество - 240p - FLV</string>
+	<string name="yt_format_6">Среднее качество - 270p - FLV</string>
+	<string name="yt_format_17">Низкое качество - 144p - 3GP</string>
+	<string name="yt_format_18">Среднее качество - 270p/360p - MP4</string>
+	<string name="yt_format_22">Высокое качество - 720p - MP4</string>
+	<string name="yt_format_34">Среднее качество - 360p - FLV</string>
+	<string name="yt_format_35">Среднее качество - 480p - FLV</string>
+	<string name="yt_format_36">Среднее качество - 240p - 3GP</string>
+	<string name="yt_format_37">Высокое качество - 1080p - MP4</string>
+	<string name="yt_format_38">Высокое качество - MP4</string>
+	<string name="yt_format_43">Среднее качество - 360p - WebM</string>
+	<string name="yt_format_44">Среднее качество - 480p - WebM</string>
+	<string name="yt_format_45">Высокое качество - 720p - WebM</string>
+	<string name="yt_format_46">Высокое качество - 1080p - WebM</string>
+	<string name="yt_format_59">Среднее качество - 480p - MP4</string>
+	<string name="yt_format_78">Среднее качество - 360p - MP4</string>
+	<string name="yt_format_82">Среднее качество(3D) - 360p - MP4</string>
+	<string name="yt_format_83">Низкое качество(3D) - 240p - MP4</string>
+	<string name="yt_format_84">Высокое качество(3D) - 720p - MP4</string>
+	<string name="yt_format_85">Среднее качество(3D) - 520p - MP4</string>
+	<string name="yt_format_100">Среднее качество(3D) - 360p - WebM</string>
+	<string name="yt_format_101">Среднее качество(3D) - 360p - WebM</string>
+	<string name="yt_format_102">Высокое качество(3D) - 720p - WebM</string>
+	<string name="yt_format_133">Низкое качество- 240p - VO MP4</string>
+	<string name="yt_format_134">Среднее качество - 360p - VO MP4</string>
+	<string name="yt_format_135">Среднее качество - 480p - VO MP4</string>
+	<string name="yt_format_136">Высокое качество - 720p - VO MP4</string>
+	<string name="yt_format_137">Высокое качество - 1080p - VO MP4</string>
+	<string name="yt_format_138">Высокое качество - MP4</string>
+	<string name="yt_format_139">Низкое качество - AO M4A</string>
+	<string name="yt_format_140">Среднее качество - AO M4A</string>
+	<string name="yt_format_141">Высокое качество - AO M4A</string>
+	<string name="yt_format_160">Низкое качество - 144p - AO MP4</string>
+	<string name="yt_format_171">Среднее качество - AO OGG</string>
+	<string name="yt_format_172">Высокое качество - AO OGG</string>
+	<string name="yt_format_242">Низкое качество - 240p - VO WebM</string>
+	<string name="yt_format_243">Низкое качество - 360p - VO WebM</string>
+	<string name="yt_format_244">Среднее качество - 480p - VO WebM</string>
+	<string name="yt_format_245">Среднее качество - 480p - VO WebM</string>
+	<string name="yt_format_246">Среднее качество - 480p - VO WebM</string>
+	<string name="yt_format_247">Высокое качество - 720p - VO WebM</string>
+	<string name="yt_format_248">Высокое качество - 1080p - VO WebM</string>
+	<string name="yt_format_264">Высокое качество - 1080p(HBR) - VO MP4</string>
+	<string name="yt_format_500">Аудио - MP3</string>
+	<string name="yt_format_unknown">неизвестный</string>
+	
+	
+</resources>

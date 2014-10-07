@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Video Downloader</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="shareText">Download and Enjoy 10000+ New Videos On Your android device.</string>
+    <string name="share">Share App</string>
+    <string name="rate">Rate App</string>
+    <string name="exit">Exit</string>
+    <string name="about">About</string>
+ 	<string name="hint_search_video">Search video</string>
+ 	
+    <string name="loading">Loading...</string>
+    <string name="more_apps_errormessage">At present there is No More Apps.\n\n Please Visit again.</string>
+    <string name="title_activity_sub_list">SubListActivity</string>
+    
+    <string name="enablewifiMsg">Please enable Wifi/3G connection</string>
+    
+
+</resources>

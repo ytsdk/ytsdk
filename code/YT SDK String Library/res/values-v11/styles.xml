@@ -1,0 +1,25 @@
+<resources>
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+    
+    <!-- Text for listboxes, non-inverted starting with Android 3.0 -->
+
+    <style name="MyListTextAppearanceSmall">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="MyListTextAppearanceDefault">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+    </style>
+
+    <style name="MyListTextAppearanceMedium">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+</resources>
