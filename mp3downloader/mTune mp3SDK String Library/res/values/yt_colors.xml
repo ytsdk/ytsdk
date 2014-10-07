@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  
+	<!-- Dialog Colors -->
+	<color name="yt_dialog_bg">#000000</color>
+	<color name="yt_list_bg">#282828</color>
+	<color name="yt_list_text_color">#FFFFFF</color>
+	<color name="yt_list_title_bg">#f93e30</color>
+	<color name="yt_list_divider">#33b5e5</color>
+	
+	<!-- Used in Custom Layout yt_custom_dialog -->
+	<color name="yt_list_highlighter_start">#257bfc</color>
+	<color name="yt_list_highlighter_end">#0351c6</color>
+	<color name="yt_list_highlighter_middle">#1165e2</color>
+	
+	<!-- Textcolors -->
+	<color name="yt_title_text_color">#FFFFFF</color>
+    <color name="yt_text_color">#FFFFFF</color>
+	<color name="yt_watch_preview_text_color">#FFFFFF</color>
+	
+	<!-- Player Screen Colors -->
+	<color name="yt_progress_bar_text_color">#FFFFFF</color>
+</resources>
