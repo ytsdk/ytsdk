@@ -36,18 +36,13 @@
     <string name="yt_msg_reconnecting">pls wait, re-connecting to sever..</string>
     <string name="yt_msg_error">Video cant be loaded due to copyright protection or age restriction or network issue.. Please try again later..</string>
     <string name="yt_msg_link_err">Video link is broken or could not connect to server..</string>
-    
-    
     <string name="yt_startapp_activity_err">Initialization Failed  Add the startapp mendatory activities for AppWallActivity and List3DActivity</string>
     <string name="yt_revmob_activity_err">Initialization Failed  Add the REVMOB mendatory activitie for FullscreenActivity</string>
-     <string name="yt_mobilecore_activity_err">Initialization Failed  Add th Mobilecore mendatory reciever, service for MobileCoreReport and InstallationTracker</string>
-    
+    <string name="yt_mobilecore_activity_err">Initialization Failed  Add the Mobilecore mendatory reviever , service for MobileCoreReport and InstallationTracker</string>
     <string name="yt_initilization_activity_err">Initialization Failed.Please check your configuration.</string>
     <string name="yt_revmob_jar_err">Initialization Failed  please add the revmob sdk Jar file</string>
     <string name="yt_startapp_jar_err">Initialization Failed  please add the startapp sdk jar file</string>
     <string name="yt_mobilecore_jar_err">Initialization Failed  please add the mobilecore sdk jar file</string>
-    
-    
     <string name="yt_startapp_conflict_err"> This YTSDK Jar is using Startapp, Please use a different YTSDK Jar </string>
     <string name="yt_revmob_conflict_err"> This YTSDK Jar is using Revmob, Please use a different YTSDK Jar </string>
     <string name="yt_mobilecore_conflict_err"> This YTSDK Jar is using mobilecore, Please use a different YTSDK Jar </string>
@@ -98,5 +93,20 @@
     <string name="yt_format_264">High Quality - 1080p(HBR) - VO MP4</string>
     <string name="yt_format_500">Audio - MP3</string>
     <string name="yt_format_unknown">Unknown</string>
+    <string name="yt_resolutions">Resolutions</string>
+    <string name="yt_cancel">Cancel</string>
+    <string name="yt_settings">Setting</string>
+    <string name="yt_default_download_location">Default download location</string>
+    <string name="yt_default_absolute_path">Get Default Download path</string>
+    <string name="yt_selectfolder">Selected Folder</string>
+    <string name="yt_no_sub_directory">No Sub Directory</string>
+    <string name="yt_button_skip">Skip</string>
+    <string name="yt_button_upgrade">Upgrade</string>
+    <string name="yt_upgrade_info">
+<![CDATA[<center><B>APK Installation help</B></center><br>
+APK location : <b>%s</b>.<br>
+Please Choose <b>Google Package manager</b> to install , When the download finishes.<br>
+For help visit : <b>http://supermate.mobi</b>]]>
+    </string>
 
 </resources>

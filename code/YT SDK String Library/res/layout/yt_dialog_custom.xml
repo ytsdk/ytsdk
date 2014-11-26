@@ -1,95 +1,240 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@color/yt_dialog_bg"
-    android:orientation="vertical" 
-    android:layoutAnimation="@anim/yt_layout_random_fade">
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
 
-    <RelativeLayout
+    <ImageView
+        android:id="@+id/yt_cancel_dialog"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:id="@+id/yt_previousLayout"
-        android:background="@color/yt_list_title_bg"
-        android:padding="2dp" >
+        android:layout_height="match_parent" />
 
-        <ImageView
-            android:id="@+id/yt_preview"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:contentDescription="preview"
-            android:scaleType="fitXY"
-            android:src="@color/yt_list_title_bg" />
+    <ScrollView
+        android:id="@+id/yt_scroll_download_whole_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
 
-        <ImageView
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:id="@+id/yt_download_whole_layout"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerInParent="true"
-            android:layout_centerVertical="true"
-            android:contentDescription="play"
-            android:scaleType="fitXY"
-            android:src="@drawable/yt_play_trailer" />
-        
-        <TextView
-            android:id="@+id/yt_preview_title"
-            android:layout_centerInParent="true"
-            android:layout_centerVertical="true"
-            android:paddingTop="90dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:minHeight="36dp"
-            android:text="@string/yt_watch_preview"
-            android:textColor="@color/yt_watch_preview_text_color"
-            android:textSize="18sp" />
-    </RelativeLayout>
+            android:layout_marginBottom="20.0dp"
+            android:layout_marginTop="20.0dp" >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:background="@color/yt_list_title_bg"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:id="@+id/yt_titleLayout" >
+            <RelativeLayout
+                android:id="@+id/yt_previewLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yt_bg_card"
+                android:visibility="gone" >
 
-        <ImageView
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_marginRight="5dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/yt_video_icon" />
+                <ImageView
+                    android:id="@+id/yt_preview_Iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="180.0dp"
+                    android:layout_margin="10.0dp"
+                    android:contentDescription="preview"
+                    android:paddingBottom="10.0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/yt_ic_action_back" />
 
-        <TextView
-            android:id="@+id/yt_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:minHeight="36dp"
-            android:text="Download Options"
-            android:textColor="@color/yt_title_text_color"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+                <ImageView
+                    android:id="@+id/yt_trailer_Iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="play"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/yt_play_trailer" />
+            </RelativeLayout>
 
-    <ListView
-        android:id="@+id/yt_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:cacheColorHint="#00000000"
-        android:divider="@color/yt_list_divider"
-        android:dividerHeight="0.5sp"
-        android:listSelector="@drawable/yt_list_selector">
-    </ListView>
+            <RelativeLayout
+                android:id="@+id/yt_download_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yt_previewLayout"
+                android:layout_marginTop="10.0dp"
+                android:background="@drawable/yt_bg_card"
+                android:visibility="gone" >
 
-    <Button
-        android:id="@+id/yt_cancel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:text="Cancel" />
+                <RelativeLayout
+                    android:id="@+id/yt_download_resolution_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
 
-</LinearLayout>
+                    <TextView
+                        android:id="@+id/yt_download_title_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="15.0dp"
+                        android:layout_marginTop="15.0dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:maxLines="1"
+                        android:text="@string/yt_resolutions"
+                        android:textColor="@color/yt_text_gray"
+                        android:textSize="22.0dp" />
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:layout_below="@id/yt_download_title_Tv"
+                        android:layout_marginLeft="20.0dp"
+                        android:layout_marginRight="20.0dp"
+                        android:background="@color/yt_app_accent_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/yt_list_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/yt_download_resolution_layout"
+                    android:layout_marginLeft="20.0dp"
+                    android:layout_marginRight="20.0dp" >
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/yt_app_accent_color" />
+
+                    <LinearLayout
+                        android:id="@+id/yt_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_below="@id/view2"
+                        android:divider="@drawable/yt_divider2"
+                        android:orientation="vertical"
+                        android:showDividers="middle" >
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/yt_cancel_Buttons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dp"
+                    android:layout_below="@id/yt_list_layout"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/yt_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/yt_actionbar_buttonpressedeffect"
+                        android:text="@string/yt_cancel"
+                        android:textColor="@color/yt_text_gray"
+                        android:textSize="20.0dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/yt_download_pathsetting_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yt_download_layout"
+                android:layout_marginBottom="10.0dp"
+                android:layout_marginTop="10.0dp"
+                android:background="@drawable/yt_bg_card"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/yt_setting_TV"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:gravity="center"
+                    android:paddingLeft="10.0dp"
+                    android:paddingRight="10.0dp"
+                    android:text="@string/yt_settings"
+                    android:textColor="@color/yt_text_gray"
+                    android:textSize="22.0dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dp"
+                    android:layout_marginLeft="20.0dp"
+                    android:layout_marginRight="20.0dp"
+                    android:layout_marginTop="15.0dp"
+                    android:background="@color/yt_app_accent_color" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="120.0dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/yt_Change_default_download_path_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10.0dp"
+                        android:layout_marginLeft="10.0dp"
+                        android:layout_marginRight="10.0dp"
+                        android:layout_marginTop="10.0dp"
+                        android:background="@drawable/yt_actionbar_buttonpressedeffect"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/yt_default_header_path_Tv"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dp"
+                            android:layout_marginRight="20.0dp"
+                            android:layout_marginTop="5.0dp"
+                            android:paddingLeft="5.0dp"
+                            android:paddingRight="5.0dp"
+                            android:text="@string/yt_default_download_location"
+                            android:textColor="@color/yt_text_gray"
+                            android:textSize="18.0dp"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/yt_change_default_absolutepath_Tv"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5.0dp"
+                            android:layout_marginLeft="5.0dp"
+                            android:layout_marginRight="20.0dp"
+                            android:layout_marginTop="5.0dp"
+                            android:maxLines="1"
+                            android:paddingLeft="5.0dp"
+                            android:paddingRight="5.0dp"
+                            android:text="@string/yt_default_absolute_path"
+                            android:textColor="@color/yt_text_gray"
+                            android:textSize="15.0dp"
+                            android:textStyle="italic"
+                            android:typeface="serif" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2.0dp"
+                        android:layout_marginLeft="20.0dp"
+                        android:layout_marginRight="20.0dp"
+                        android:background="@drawable/yt_divider" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dp"
+                android:layout_below="@id/yt_download_pathsetting_layout"
+                android:layout_marginLeft="40.0dp"
+                android:layout_marginRight="40.0dp"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

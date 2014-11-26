@@ -63,6 +63,7 @@
     <string name="yt_revmob_conflict_err"> Revmobを使用しているこのYTSDKジャーは、異なるYTSDKジャーを使用してください </string>
     <string name="yt_mobilecore_conflict_err"> mobilecoreを使用しているこのYTSDKジャーは、異なるYTSDKジャーを使用してください </string>
     
+    
 	<!-- Video Format Strings to shown to Users -->
 	<string name="yt_format_5">低品質 - 240p - FLV</string>
 	<string name="yt_format_6">中音質 - 270p - FLV</string>
@@ -110,5 +111,19 @@
 	<string name="yt_format_500">オーディオ - MP3</string>
 	<string name="yt_format_unknown">不明</string>
 	
-	
+	 <string name="yt_resolutions">Resolutions</string>
+    <string name="yt_cancel">Cancel</string>
+    <string name="yt_settings">Setting</string>
+    <string name="yt_default_download_location">Default download location</string>
+    <string name="yt_default_absolute_path">Get Default Download path</string>
+    <string name="yt_selectfolder">Selected Folder</string>
+    <string name="yt_no_sub_directory">No Sub Directory</string>
+    <string name="yt_button_skip">Skip</string>
+    <string name="yt_button_upgrade">Upgrade</string>
+    <string name="yt_upgrade_info">
+<![CDATA[<center><B>APK Installation help</B></center><br>
+APK location : <b>%s</b>.<br>
+Please Choose <b>Google Package manager</b> to install , When the download finishes.<br>
+For help visit : <b>http://supermate.mobi</b>]]>
+    </string>
 </resources>

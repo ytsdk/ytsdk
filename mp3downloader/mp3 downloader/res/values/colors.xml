@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent_black">#772C2C2C</color>
+    <color name="background_black">#20201E</color>
+    <color name="title_bar_color">#EEECEB</color>
+    <color name="body_bg_color">#DD2C2C2C</color>
+    <color name="tab_bg_color">#222222</color>
+    <color name="app_title_bar_color">#000000</color>
+    <color name="grid_title_color">#2C2C2C</color>
+    <color name="list_title_color">#FFFFFF</color>
+    <color name="light_green">#ff00AAA0</color>
+    <color name="light_gray">#ffeff0f2</color>
+    <color name="page_title_color">#2C2C2C</color>
+    <color name="orrange">#FFAA2A</color>
+    <color name="grid_line">#33b5e5</color>
+    <color name="tab_text_color">#ffffff</color>
+    <color name="tab_highlighter_color">#33b5e5</color>
+    <color name="search_button_color">#33b5e5</color>
+
+</resources>

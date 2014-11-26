@@ -3,12 +3,9 @@
     android:id="@android:id/title"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center"
-    android:minHeight="30dp"
-    android:text="Title"
-    android:textSize="18.0sp" 
- 	android:textColor="@color/yt_list_text_color"
- 	android:paddingTop="4dp"
- 	android:paddingBottom="4dp" />
-
-
+    android:background="@drawable/yt_actionbar_buttonpressedeffect"
+    android:maxLines="1"
+    android:paddingBottom="12.5dip"
+    android:paddingTop="12.5dip"
+    android:textColor="@color/yt_text_gray"
+    android:textSize="19.0dip" />

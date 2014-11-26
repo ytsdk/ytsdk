@@ -63,6 +63,7 @@
     <string name="yt_revmob_conflict_err"> Revmob를 사용하는이 YTSDK 항아리는 다른 YTSDK 항아리를 사용하십시오 </string>
     <string name="yt_mobilecore_conflict_err"> mobilecore를 사용하는이 YTSDK 항아리는 다른 YTSDK 항아리를 사용하십시오 </string>
     
+    
 	<!-- Video Format Strings to shown to Users -->
 	<string name="yt_format_5">낮은 품질 - 240p - FLV</string>
 	<string name="yt_format_6">중간 품질 - 270p - FLV</string>
@@ -110,5 +111,19 @@
 	<string name="yt_format_500">오디오 - MP3</string>
 	<string name="yt_format_unknown">알 수없는</string>
 	
-	
+	 <string name="yt_resolutions">Resolutions</string>
+    <string name="yt_cancel">Cancel</string>
+    <string name="yt_settings">Setting</string>
+    <string name="yt_default_download_location">Default download location</string>
+    <string name="yt_default_absolute_path">Get Default Download path</string>
+    <string name="yt_selectfolder">Selected Folder</string>
+    <string name="yt_no_sub_directory">No Sub Directory</string>
+    <string name="yt_button_skip">Skip</string>
+    <string name="yt_button_upgrade">Upgrade</string>
+    <string name="yt_upgrade_info">
+<![CDATA[<center><B>APK Installation help</B></center><br>
+APK location : <b>%s</b>.<br>
+Please Choose <b>Google Package manager</b> to install , When the download finishes.<br>
+For help visit : <b>http://supermate.mobi</b>]]>
+    </string>
 </resources>

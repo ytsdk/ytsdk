@@ -17,4 +17,17 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="yt_Dialog_full_screen" parent="android:Theme.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="yt_DownloadSecDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/yt_blank_colorless</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="yt_BaseAppDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/yt_blank_colorless</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
 </resources>

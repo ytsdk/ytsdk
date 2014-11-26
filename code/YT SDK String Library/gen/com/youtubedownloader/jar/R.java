@@ -13,12 +13,17 @@ public final class R {
         public static int yt_fade=0x7f040001;
         public static int yt_layout_dialog_zoom_enter=0x7f040002;
         public static int yt_layout_random_fade=0x7f040003;
-        public static int yt_shake=0x7f040004;
-        public static int yt_zoom_enter=0x7f040005;
+        public static int yt_left_in=0x7f040004;
+        public static int yt_left_out=0x7f040005;
+        public static int yt_right_in=0x7f040006;
+        public static int yt_right_out=0x7f040007;
+        public static int yt_shake=0x7f040008;
+        public static int yt_zoom_enter=0x7f040009;
     }
     public static final class attr {
     }
     public static final class color {
+        public static int yt_app_accent_color=0x7f07000d;
         /**  Dialog Colors 
          */
         public static int yt_dialog_bg=0x7f070000;
@@ -35,6 +40,7 @@ public final class R {
          */
         public static int yt_progress_bar_text_color=0x7f07000b;
         public static int yt_text_color=0x7f070009;
+        public static int yt_text_gray=0x7f07000c;
         /**  Textcolors 
          */
         public static int yt_title_text_color=0x7f070008;
@@ -51,29 +57,77 @@ public final class R {
         public static int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static int yt_ad_close=0x7f020000;
-        public static int yt_gradient_on_normal=0x7f020001;
-        public static int yt_gradient_on_select=0x7f020002;
-        public static int yt_list_selector=0x7f020003;
-        public static int yt_no_image=0x7f020004;
-        public static int yt_play_trailer=0x7f020005;
-        public static int yt_video_icon=0x7f020006;
+        public static int font_subtitle=0x7f020000;
+        public static int font_title=0x7f020001;
+        public static int yt_actionbar_buttonpressedeffect=0x7f020002;
+        public static int yt_ad_close=0x7f020003;
+        public static int yt_bg_card=0x7f020004;
+        public static int yt_bg_image=0x7f020005;
+        public static int yt_bg_white_textured=0x7f020006;
+        public static int yt_bg_white_tile=0x7f020007;
+        public static int yt_blank_colorless=0x7f020008;
+        public static int yt_buttonpressedeffect=0x7f020009;
+        public static int yt_divider=0x7f02000a;
+        public static int yt_divider2=0x7f02000b;
+        public static int yt_gradient_on_normal=0x7f02000c;
+        public static int yt_gradient_on_select=0x7f02000d;
+        public static int yt_ic_action_back=0x7f02000e;
+        public static int yt_list_focused_holo=0x7f02000f;
+        public static int yt_list_longpressed_holo=0x7f020010;
+        public static int yt_list_pressed_holo_light=0x7f020011;
+        public static int yt_list_selector=0x7f020012;
+        public static int yt_list_selector_background_transition_holo_light=0x7f020013;
+        public static int yt_list_selector_disabled_holo_light=0x7f020014;
+        public static int yt_no_image=0x7f020015;
+        public static int yt_play_trailer=0x7f020016;
+        public static int yt_video_icon=0x7f020017;
     }
     public static final class id {
-        public static int yt_cancel=0x7f0c0006;
-        public static int yt_list=0x7f0c0005;
-        public static int yt_preview=0x7f0c0001;
-        public static int yt_preview_title=0x7f0c0002;
-        public static int yt_previousLayout=0x7f0c0000;
-        public static int yt_title=0x7f0c0004;
-        public static int yt_titleLayout=0x7f0c0003;
+        public static int appName=0x7f0c0002;
+        public static int appicon=0x7f0c0001;
+        public static int progressBar=0x7f0c000a;
+        public static int upgradeDesc=0x7f0c0005;
+        public static int view1=0x7f0c0003;
+        public static int view2=0x7f0c0006;
+        public static int yt_Change_default_download_path_layout=0x7f0c001a;
+        public static int yt_back_Ib=0x7f0c001d;
+        public static int yt_cancel=0x7f0c0017;
+        public static int yt_cancel_Btn=0x7f0c0020;
+        public static int yt_cancel_Buttons=0x7f0c0016;
+        public static int yt_cancel_dialog=0x7f0c000b;
+        public static int yt_change_default_absolutepath_Tv=0x7f0c001c;
+        public static int yt_confirm_Btn=0x7f0c0021;
+        public static int yt_default_header_path_Tv=0x7f0c001b;
+        public static int yt_downloadAbs_path_Tv=0x7f0c001f;
+        public static int yt_download_layout=0x7f0c0011;
+        public static int yt_download_pathsetting_layout=0x7f0c0018;
+        public static int yt_download_resolution_layout=0x7f0c0012;
+        public static int yt_download_title_Tv=0x7f0c0013;
+        public static int yt_download_whole_layout=0x7f0c000d;
+        public static int yt_list=0x7f0c0015;
+        public static int yt_list_layout=0x7f0c0014;
+        public static int yt_otherfolder_list=0x7f0c0022;
+        public static int yt_otherfolder_list_layout=0x7f0c0004;
+        public static int yt_previewLayout=0x7f0c000e;
+        public static int yt_preview_Iv=0x7f0c000f;
+        public static int yt_scroll_download_whole_layout=0x7f0c000c;
+        public static int yt_selectfolder_Buttons_layout=0x7f0c0007;
+        public static int yt_selectfolder_layout=0x7f0c0000;
+        public static int yt_selectfolder_tv=0x7f0c001e;
+        public static int yt_setting_TV=0x7f0c0019;
+        public static int yt_skip_Btn=0x7f0c0008;
+        public static int yt_trailer_Iv=0x7f0c0010;
+        public static int yt_upgrade_Btn=0x7f0c0009;
     }
     public static final class integer {
         public static int yt_listview_text_size=0x7f0a0000;
     }
     public static final class layout {
-        public static int yt_dialog_custom=0x7f030000;
-        public static int yt_dialog_list_textview=0x7f030001;
+        public static int yt_dailog_download=0x7f030000;
+        public static int yt_dailog_download_progress=0x7f030001;
+        public static int yt_dialog_custom=0x7f030002;
+        public static int yt_dialog_list_textview=0x7f030003;
+        public static int yt_setting_dialog_custom=0x7f030004;
     }
     public static final class string {
         /**  YT SDK String and Errors 
@@ -90,9 +144,14 @@ public final class R {
         public static int yt_activity_null=0x7f0b0000;
         public static int yt_button_cancel=0x7f0b0015;
         public static int yt_button_install=0x7f0b0016;
+        public static int yt_button_skip=0x7f0b005e;
+        public static int yt_button_upgrade=0x7f0b005f;
+        public static int yt_cancel=0x7f0b0058;
         public static int yt_conn_failed_msg=0x7f0b000b;
         public static int yt_connection_error_msg=0x7f0b0007;
         public static int yt_connection_error_title=0x7f0b0006;
+        public static int yt_default_absolute_path=0x7f0b005b;
+        public static int yt_default_download_location=0x7f0b005a;
         public static int yt_download_completed=0x7f0b0011;
         public static int yt_download_dialog_title=0x7f0b000e;
         public static int yt_download_error_msg=0x7f0b000d;
@@ -172,16 +231,21 @@ public final class R {
         public static int yt_msg_link_err=0x7f0b001f;
         public static int yt_msg_low_band=0x7f0b001a;
         public static int yt_msg_reconnecting=0x7f0b001d;
+        public static int yt_no_sub_directory=0x7f0b005d;
         public static int yt_progress_msg=0x7f0b000f;
         public static int yt_progress_msgmp3=0x7f0b0010;
+        public static int yt_resolutions=0x7f0b0057;
         public static int yt_revmob_activity_err=0x7f0b0021;
         public static int yt_revmob_conflict_err=0x7f0b0028;
         public static int yt_revmob_jar_err=0x7f0b0024;
+        public static int yt_selectfolder=0x7f0b005c;
         public static int yt_server_auth_failed_msg=0x7f0b0004;
         public static int yt_server_auth_failed_title=0x7f0b0003;
+        public static int yt_settings=0x7f0b0059;
         public static int yt_startapp_activity_err=0x7f0b0020;
         public static int yt_startapp_conflict_err=0x7f0b0027;
         public static int yt_startapp_jar_err=0x7f0b0025;
+        public static int yt_upgrade_info=0x7f0b0060;
         public static int yt_videoID_null_msg=0x7f0b0005;
         /**  Player Screen Error Messages 
  Player Screen Error Messages 
@@ -230,6 +294,9 @@ public final class R {
  Text for listboxes, inverted for Andorid prior to 3.0 
          */
         public static int MyListTextAppearanceSmall=0x7f060001;
+        public static int yt_BaseAppDialog=0x7f060007;
+        public static int yt_Dialog_full_screen=0x7f060005;
+        public static int yt_DownloadSecDialog=0x7f060006;
     }
     public static final class yt_list {
         public static int yt_list=0x7f080000;
