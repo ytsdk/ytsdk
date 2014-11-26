@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:layout_margin="20.0dip"
+    android:background="@drawable/yt_bg_card"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/yt_selectfolder_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/appicon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/yt_actionbar_buttonpressedeffect"
+            android:src="@drawable/yt_ic_action_back" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="27dp"
+            android:text="@string/yt_selectfolder"
+            android:textColor="@color/yt_text_gray"
+            android:textSize="18.0dip" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/yt_app_accent_color" />
+
+    <LinearLayout
+        android:id="@+id/yt_otherfolder_list_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/upgradeDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/yt_selectfolder"
+            android:textColor="@color/yt_text_gray"
+            android:textSize="16.0dip" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/yt_app_accent_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yt_selectfolder_Buttons_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <Button
+            android:id="@+id/yt_skip_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/yt_actionbar_buttonpressedeffect"
+            android:gravity="center"
+            android:text="@string/yt_button_skip"
+            android:textColor="@color/yt_text_gray"
+            android:textSize="20.0dip"
+            android:typeface="serif" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="3.0dip"
+            android:background="@color/yt_app_accent_color" />
+
+        <Button
+            android:id="@+id/yt_upgrade_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/yt_actionbar_buttonpressedeffect"
+            android:gravity="center"
+            android:text="@string/yt_button_upgrade"
+            android:textColor="@color/yt_text_gray"
+            android:textSize="20.0dip"
+            android:typeface="serif" />
+    </LinearLayout>
+
+</LinearLayout>

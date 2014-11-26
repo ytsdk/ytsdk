@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <ImageView
+        android:id="@+id/yt_cancel_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/yt_bg_card" >
+
+        <RelativeLayout
+            android:id="@+id/yt_selectfolder_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/yt_back_Ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yt_actionbar_buttonpressedeffect"
+                android:src="@drawable/yt_ic_action_back" />
+
+            <TextView
+                android:id="@+id/yt_selectfolder_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_toRightOf="@id/yt_back_Ib"
+                android:text="@string/yt_selectfolder"
+                android:textColor="@color/yt_text_gray"
+                android:textSize="18.0dip" />
+
+            <TextView
+                android:id="@+id/yt_downloadAbs_path_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yt_selectfolder_tv"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_toRightOf="@id/yt_back_Ib"
+                android:maxLines="1"
+                android:text="@string/yt_default_absolute_path"
+                android:textColor="@color/yt_text_gray"
+                android:textSize="15.0dip" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_below="@id/yt_back_Ib"
+                android:background="@color/yt_app_accent_color" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/yt_selectfolder_Buttons_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+            <Button
+                android:id="@+id/yt_cancel_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/yt_actionbar_buttonpressedeffect"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textColor="@color/yt_text_gray"
+                android:textSize="20.0dip"
+                android:typeface="serif" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="3.0dip"
+                android:background="@color/yt_app_accent_color" />
+
+            <Button
+                android:id="@+id/yt_confirm_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/yt_actionbar_buttonpressedeffect"
+                android:gravity="center"
+                android:text="Confirm"
+                android:textColor="@color/yt_text_gray"
+                android:textSize="20.0dip"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/yt_otherfolder_list_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/yt_selectfolder_Buttons_layout"
+            android:layout_below="@id/yt_selectfolder_layout"
+            android:background="@drawable/yt_bg_white_textured" >
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_alignParentBottom="true"
+                android:background="@color/yt_app_accent_color" />
+
+            <ListView
+                android:id="@+id/yt_otherfolder_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_below="@id/view2"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:divider="@drawable/yt_divider"
+                android:dividerHeight="2.0dip"
+                android:listSelector="@drawable/yt_list_selector_background_transition_holo_light" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
