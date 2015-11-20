@@ -1,6 +1,8 @@
 package com.yt.common.utils;
 
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Calendar;
 
 import org.apache.http.HttpEntity;
@@ -21,17 +23,17 @@ import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.net.http.AndroidHttpClient;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
-import com.startapp.android.publish.StartAppAd;
-import com.ytsdk.testapp.mbc.R;
+import com.ironsource.mobilcore.MobileCore;
 import com.yt.common.constants.Constants;
+import com.ytsdk.testapp.stp.R;
 
 public class Utils {
 
 	private static InterstitialAd interstitial;
-	private static StartAppAd startAppAd;
 
 	public static boolean isEmpty(String str) {
 		return str == null || str.length() == 0;
@@ -170,9 +172,7 @@ public class Utils {
 	}
 
 	public static void loadFullScreenAd(Activity activity) {
-		if (startAppAd == null) {
-			startAppAd = new StartAppAd(activity);
-		}
+
 		if (Constants.ADMOB_FULLSCREEN_ADS) {
 			// Create the interstitial.
 			AdRequest adRequest = new AdRequest.Builder().build();
@@ -181,30 +181,61 @@ public class Utils {
 					.getString(R.string.admob_fullscreen_id));
 			// Begin loading your interstitial.
 			interstitial.loadAd(adRequest);
-			startAppAd.loadAd();
-		} else {
-			startAppAd.loadAd();
 		}
 	}
 
 	public static void showFullScreenAd(Activity context) {
-		if (startAppAd == null) {
-			startAppAd = new StartAppAd(context);
-		}
 		if (Constants.ADMOB_FULLSCREEN_ADS) {
 			if (interstitial.isLoaded()) {
 				interstitial.show();
 				loadFullScreenAd(context);
-			} else if (startAppAd.isReady()) {
-				startAppAd.showAd();
-				startAppAd.loadAd();
+			} else {
+				MobileCore.showInterstitial(context, null);
+				// MobileCore.refreshOffers();
+				MobileCore.loadAdUnit(MobileCore.AD_UNITS.INTERSTITIAL, MobileCore.AD_UNIT_TRIGGER.MAIN_MENU);
+						
 			}
 		} else {
-			if (startAppAd.isReady()) {
-				startAppAd.showAd();
-				startAppAd.loadAd();
-			}
+			MobileCore.showInterstitial(context, null);
+			MobileCore.loadAdUnit(MobileCore.AD_UNITS.INTERSTITIAL, MobileCore.AD_UNIT_TRIGGER.MAIN_MENU);
 		}
+	}
+
+	public static String doZIPHttp(String url) {
+		String result = null;
+		try {
+
+			final HttpParams httpParams = new BasicHttpParams();
+			HttpConnectionParams.setConnectionTimeout(httpParams, 10000);
+
+			DefaultHttpClient httpclient = new DefaultHttpClient(httpParams);
+
+			HttpGet httpget = new HttpGet(url);
+
+			AndroidHttpClient.modifyRequestToAcceptGzipResponse(httpget);
+
+			HttpEntity httpEntity = httpclient.execute(httpget).getEntity();
+
+			if (httpEntity != null) {
+				InputStream in = AndroidHttpClient
+						.getUngzippedContent(httpEntity);
+				if (in != null) {
+					result = inputStram2String(in);
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+
+	private static String inputStram2String(InputStream in) throws IOException {
+		StringBuffer out = new StringBuffer();
+		byte[] b = new byte[4096];
+		for (int i; (i = in.read(b)) != -1;) {
+			out.append(new String(b, 0, i));
+		}
+		return out.toString();
 	}
 
 }

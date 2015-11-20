@@ -13,9 +13,8 @@
     <string name="more_apps_errormessage">At present there is No More Apps.\n\n Please Visit again.</string>
     <string name="title_activity_sub_list">SubListActivity</string>
     <string name="enablewifiMsg">Please enable Wifi/3G connection</string>
-    <string name="admob_banner_id">ca-app-pub-5322742319440512/4322037185</string>
-    <string name="admob_fullscreen_id">ca-app-pub-5322742319440512/7275503582</string>
-    <string name="startapp_developer_id">987550903</string>
-    <string name="startapp_app_id">525884043</string>
+    <string name="admob_banner_id">ca-app-pub-9857550299737444/6727862415</string>
+    <string name="admob_fullscreen_id">ca-app-pub-9857550299737444/3774396016</string>
+    <string name="mobilecore_developer_hash">14VBP47F5MCSMC5ORLVHOZRPF730Y</string>
 
 </resources>

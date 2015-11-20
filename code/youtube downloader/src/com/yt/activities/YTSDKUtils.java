@@ -21,7 +21,7 @@ public class YTSDKUtils {
 		}
 	}
 
-	public static YTSDK getYTSDK() {		
+	public static YTSDK getYTSDK() {
 		return ytsdk;
 	}
 }

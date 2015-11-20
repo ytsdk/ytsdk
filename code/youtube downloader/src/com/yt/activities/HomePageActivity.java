@@ -17,14 +17,13 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.ironsource.mobilcore.MobileCore;
 import com.startapp.android.publish.StartAppAd;
-import com.startapp.android.publish.banner.Banner;
-import com.ytsdk.testapp.mbc.R;
+import com.ytsdk.testapp.stp.R;
 import com.yt.application.GlobalAppData;
 import com.yt.common.constants.Constants;
 import com.yt.common.utils.Utils;
@@ -81,8 +80,8 @@ public class HomePageActivity extends FragmentActivity implements
 
 		loadBannerAds();
 		Utils.showFullScreenAd(this);
-		/** Add Slider **/
-		StartAppAd.showSlider(this);
+		// MobileCore.showStickee(this);
+		MobileCore.loadAdUnit(MobileCore.AD_UNITS.STICKEEZ, MobileCore.AD_UNIT_TRIGGER.MAIN_MENU);
 	}
 
 	@Override
@@ -255,22 +254,6 @@ public class HomePageActivity extends FragmentActivity implements
 			AdRequest adRequest = new AdRequest.Builder().build();
 			adView.loadAd(adRequest);
 			adView.setVisibility(View.VISIBLE);
-		} else {
-			/**
-			 * Add banner programmatically (within Java code, instead of within
-			 * the layout xml)
-			 **/
-			LinearLayout mainLayout = (LinearLayout) findViewById(R.id.layout_home);
-
-			// Create new StartApp banner
-			Banner startAppBanner = new Banner(this);
-			LinearLayout.LayoutParams bannerParameters = new LinearLayout.LayoutParams(
-					LinearLayout.LayoutParams.WRAP_CONTENT,
-					LinearLayout.LayoutParams.WRAP_CONTENT);
-			bannerParameters.gravity = Gravity.CENTER;
-
-			// Add the banner to the main layout
-			mainLayout.addView(startAppBanner, bannerParameters);
 		}
 	}
 

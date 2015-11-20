@@ -8,7 +8,7 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
-import com.ytsdk.testapp.mbc.R;
+import com.ytsdk.testapp.stp.R;
 
 public class GlobalAppData extends Application {
 

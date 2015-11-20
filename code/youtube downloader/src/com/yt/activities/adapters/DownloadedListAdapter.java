@@ -14,7 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.ytsdk.testapp.mbc.R;
+import com.ytsdk.testapp.stp.R;
 import com.yt.item.VideoItem;
 
 public class DownloadedListAdapter extends ArrayAdapter<VideoItem> {

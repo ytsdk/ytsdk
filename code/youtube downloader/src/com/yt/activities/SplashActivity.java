@@ -7,8 +7,10 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.Window;
 
-import com.startapp.android.publish.StartAppSDK;
-import com.ytsdk.testapp.mbc.R;
+import com.ironsource.mobilcore.MobileCore;
+import com.ironsource.mobilcore.MobileCore.AD_UNITS;
+import com.ironsource.mobilcore.MobileCore.LOG_TYPE;
+import com.ytsdk.testapp.stp.R;
 import com.yt.common.utils.Utils;
 
 public class SplashActivity extends Activity {
@@ -30,9 +32,9 @@ public class SplashActivity extends Activity {
 		YTSDKUtils.initilizeYTSDK(this);
 		networkCheck = Utils.isNetworkAvailable(this);
 
-		// Initilize StartApp
-		StartAppSDK.init(this, getString(R.string.startapp_developer_id),
-				getString(R.string.startapp_app_id), true);
+		// Initilize MobileCore
+		MobileCore.init(this, getString(R.string.mobilecore_developer_hash),
+				LOG_TYPE.PRODUCTION, MobileCore.AD_UNITS.INTERSTITIAL, MobileCore.AD_UNITS.STICKEEZ);
 
 		if (!networkCheck) {
 			Utils.showConnectivityErrorDialog(this);

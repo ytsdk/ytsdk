@@ -424,12 +424,11 @@ int string enablewifiMsg 0x7f0b008c
 int string exit 0x7f0b0086
 int string hint_search_video 0x7f0b0088
 int string loading 0x7f0b0089
+int string mobilecore_developer_hash 0x7f0b008f
 int string more_apps_errormessage 0x7f0b008a
 int string rate 0x7f0b0085
 int string share 0x7f0b0084
 int string shareText 0x7f0b0083
-int string startapp_app_id 0x7f0b0090
-int string startapp_developer_id 0x7f0b008f
 int string title_activity_sub_list 0x7f0b008b
 int string wallet_buy_button_place_holder 0x7f0b0080
 int string yt_activity_null 0x7f0b0000

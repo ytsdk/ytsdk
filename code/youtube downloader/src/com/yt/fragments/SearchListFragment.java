@@ -26,22 +26,24 @@ import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.ytsdk.testapp.mbc.R;
 import com.yt.activities.YTSDKUtils;
 import com.yt.activities.adapters.SearchListAdapter;
+import com.yt.common.constants.Constants;
 import com.yt.common.utils.ConnectionChecker;
 import com.yt.common.utils.GData;
 import com.yt.common.utils.MyLog;
 import com.yt.common.utils.Utils;
 import com.yt.item.VideoItem;
+import com.ytsdk.testapp.stp.R;
 
 public class SearchListFragment extends Fragment {
 
 	private static final String KEY_CONTENT = "ItemListFragment:Items";
 	private static final String KEY_FILE_NAME = "ItemListFragment:fileName";
 
-	private final String SEARCH_URL_1 = "http://gdata.youtube.com/feeds/api/videos?q=";
-	private final String SEARCH_URL_2 = "&max-results=50&v=2.1";
+	private final String SEARCH_URL_1 = "https://www.googleapis.com/youtube/v3/search?order=viewCount&q=";
+	private final String SEARCH_URL_2 = "&type=video&maxResults=20&part=snippet&fields=items(id/videoId,snippet/title,snippet/thumbnails)&key="
+			+ Constants.YOUTUBE_API_KEY;
 
 	private GridView mGridView;
 
@@ -202,8 +204,7 @@ public class SearchListFragment extends Fragment {
 
 			if (searchUrl != null && searchUrl.length() > 0) {
 
-				videoList = GData.getGData(searchUrl,
-						SearchListFragment.this.getActivity(), null);
+				videoList = GData.getGData(searchUrl);
 			}
 
 			return videoList;

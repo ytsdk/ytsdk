@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
-import com.ytsdk.testapp.mbc.R;
+import com.ytsdk.testapp.stp.R;
 import com.yt.item.VideoItem;
 
 public class SearchListAdapter extends ArrayAdapter<VideoItem> {

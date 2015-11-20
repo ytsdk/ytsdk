@@ -24,7 +24,7 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 
-import com.ytsdk.testapp.mbc.R;
+import com.ytsdk.testapp.stp.R;
 import com.yt.activities.YTSDKUtils;
 import com.yt.activities.adapters.DownloadedListAdapter;
 import com.yt.application.GlobalAppData;
